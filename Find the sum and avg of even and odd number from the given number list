@@ -1,0 +1,31 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{
+    int n,es=0,os=0,ec=0,oc=0;
+    while(n>=0)
+    {
+        cin>>n;
+        if(n<0)
+        {
+            break;
+        }
+        if(n%2==0)
+        {
+            es=es+n;
+            ec++;
+        }
+        else
+        {
+            os=os+n;
+            oc++;
+        }
+    }
+    float ea,oa;
+    ea=(float)es/ec;
+    oa=(float)os/oc;
+    cout<<es<<endl<<os<<endl;
+    cout<<fixed<<setprecision(2)<<ea<<endl<<oa;
+    return 0;
+}
