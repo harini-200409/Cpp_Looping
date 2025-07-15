@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,tab;
+    cin>>tab>>n;
+    for(int i=1;i<=n;i++)
+    {
+        cout<<tab<<" * "<<i<<" "<<"= "<<(tab*i)<<endl;
+    }
+    return 0;
+}
