@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+   int n;
+   cin>>n;
+   int a=0,b=1,c;
+   if(n==0||n==1)
+   {
+       cout<<"fibanocci number";
+   }
+   c=a+b;
+   while(c<=n)
+   {
+       c=a+b;
+       if(n==c)
+       {
+          cout<<"fibanocci number";
+          break;
+       }
+       else if(c>n)
+       {
+           cout<<"Not fibanocci number";
+           break;
+       }
+        a=b;
+        b=c;
+   }
+    return 0;
+}
