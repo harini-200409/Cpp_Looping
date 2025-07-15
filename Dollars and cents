@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int d1,c1,d2,c2;
+    cin>>d1>>c1>>d2>>c2;
+    int sd,sc,tc,td;
+    sd=d1+d2;
+    sc=c1+c2;
+    tc=sc%100;
+    td=sd+(sc/100);
+    cout<<td<<endl<<tc;
+    return 0;
+}
